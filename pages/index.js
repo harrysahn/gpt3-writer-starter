@@ -35,16 +35,16 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Translate plain English into code!</h1>
+            <h1>Code-ify your ideas!</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Coding languages that are supported include: Python, R, SQL</h2>
+            <h2>Translate plain English into Python, R and SQL.</h2>
           </div>
         </div>
         {/* Add this code here*/}
         <div className="prompt-container">
           <textarea
-            placeholder="start typing here"
+            placeholder="Start typing here!"
             className="prompt-box"
             value={userInput}
             onChange={onUserChangedText}
@@ -70,18 +70,6 @@ const Home = () => {
           </div>
 )}
         </div>
-      </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-writer"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
-          </div>
-        </a>
       </div>
     </div>
   );

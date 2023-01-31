@@ -46,7 +46,14 @@ body {
 .header-title {
     display: flex;
     gap: 12px;
+    animation: color-change 2s infinite;
 }
+
+@keyframes color-change {
+    0% { color: red; }
+    50% { color: blue; }
+    100% { color: red; }
+  }
 
 .header-title h1 {
     width: 100%;
@@ -136,6 +143,7 @@ textarea {
     padding: 0px;
     position: relative;
     width: 100%;
+    padding-left: 40px;
 }
 
 .key-stroke {
@@ -172,7 +180,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(131, 221, 79);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -198,8 +206,9 @@ textarea {
 }
 
 .generate p {
-    color: rgb(255, 255, 255);
+    color: rgb(34, 32, 41);
     margin: 0;
+    font-weight: bold;
 }
 
 .loading {
