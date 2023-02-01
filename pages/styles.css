@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 body {
     margin: 0;
@@ -40,20 +43,25 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
-    color: #FFF
+    color: #FFF;
+    font-family: 'Itim', cursive;
 }
 
+/*
 .header-title {
     display: flex;
     gap: 12px;
     animation: color-change 2s infinite;
 }
 
+Not using animation anymore.
+
 @keyframes color-change {
     0% { color: red; }
     50% { color: blue; }
     100% { color: red; }
-  }
+  } 
+  */
 
 .header-title h1 {
     width: 100%;
@@ -175,25 +183,6 @@ textarea {
 
 .or p {
     color: rgba(255, 255, 255, 0.25)
-}
-
-.generate-button {
-    place-content: flex-start;
-    align-items: flex-start;
-    background-color: rgb(131, 221, 79);
-    border-radius: 100px;
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: column nowrap;
-    gap: 10px;
-    height: min-content;
-    overflow: hidden;
-    padding: 16px 24px;
-    position: relative;
-    text-decoration: none;
-    width: min-content;
-    will-change: transform;
-    cursor: pointer;
 }
 
 .generate {
